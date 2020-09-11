@@ -7,7 +7,7 @@
 
   postFetch = ''
     mkdir -p $out/share/fonts
-    unzip -j $downloadedFile \*.ttf -d $out/share/fonts/expressway
+    gunzip -j $downloadedFile \*.ttf -d $out/share/fonts/expressway
   '';
 
   sha256 = "858a865ab515e44f16a9be0e488062df77d3f81c2d4f096e7ad3c4ea1934606f";
